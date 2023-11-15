@@ -7,6 +7,7 @@ deepspeed --num_gpus=8 shurale/cli/train.py \
   --model_name_or_path mistralai/Mistral-7B-v0.1 \
   --use_flash_attention_2 False \
   --load_in_4bit True \
+  --prepare_model_for_kbit_training True \
   --apply_lora True \
   --raw_lora_target_modules all \
   --per_device_train_batch_size 4 \
