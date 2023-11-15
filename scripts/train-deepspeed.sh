@@ -2,7 +2,8 @@
 
 deepspeed --num_gpus=8 shurale/cli/train.py \
   --use_gradient_checkpointing True \
-  --deepspeed_stage 2 --stabilize True \
+  --deepspeed_stage 2 \
+  --stabilize True \
   --model_name_or_path mistralai/Mistral-7B-v0.1 \
   --use_flash_attention_2 False \
   --load_in_4bit True \
@@ -21,12 +22,5 @@ deepspeed --num_gpus=8 shurale/cli/train.py \
   --save_steps 1000 \
   --max_steps 10050 \
   --save_safetensors True \
-  --use_gradient_checkpointing True \
-  --stabilize True \
-  --max_length 2048 \
-  --use_flash_attention_2 False \
-  --prepare_model_for_kbit_training True \
-  --load_in_4bit True \
-  --apply_lora True \
   --label_smoothing_factor 0.1 \
   --path_to_env_file ./.env
