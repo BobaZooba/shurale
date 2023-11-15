@@ -21,7 +21,7 @@ project.
 | `train.sh`           | Train the model (this is usually done using LoRA).                                                                                      |
 | `train-deepspeed.sh` | Train the model (this is usually done using LoRA) using multi-gpu and DeepSpeed. Specify the correct number of GPUs used in the script. |
 | `fuse.sh`            | Fuse LoRA and upload fused model to Huggingface Hub                                                                                     |
-| `gptq-quantize.sh`   | GPTQ quantization of the fused model. Optional step.                                                                                    |
+| `quantize.sh`   | GPTQ quantization of the fused model. Optional step.                                                                                    |
 
 Please check these useful materials:
 
