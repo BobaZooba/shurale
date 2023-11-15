@@ -26,7 +26,6 @@ install-train:  ## Installation including deepspeed, flash-attn and auto-gptq
 .PHONY: scripts-access
 scripts-access:  ## Give access to bash scripts
 	chmod -R 755 ./scripts/
-	chmod -R 755 ./scripts/test/
 
 #* Download
 .PHONY: download
